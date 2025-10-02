@@ -14,6 +14,13 @@ import { useState } from "react"
 export default function Home() {
   const [formu, setformu] = useState(false)
   
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "+5491170061908"
+    const message = "👋 ¡Hola! ¿En qué puedo ayudarte con tu tienda online?"
+    const whatsappUrl = `https://wa.me/${phoneNumber.replace('+', '')}?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, '_blank')
+  }
+
   return (
     <>
       <main className="relative min-h-screen bg-black text-white overflow-x-hidden">
