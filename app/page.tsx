@@ -1,14 +1,15 @@
 "use client"
 
 import Link from "next/link"
+
+import { motion } from "framer-motion"
+import { Zap } from "lucide-react"
+import { useState } from "react"
+
+import {ContactForm} from "@/mycomponents/contact-form"
 import { Footer } from "@/components/footer"
 import { PoweredByBadge } from "@/components/powered-by-badge"
 import { TypingHero } from "@/components/typing-hero"
-import { motion } from "framer-motion"
-import { Zap } from "lucide-react"
-import {ContactForm} from "@/mycomponents/contact-form"
-import { useState } from "react"
-
 
 
 export default function Home() {
@@ -72,10 +73,8 @@ export default function Home() {
               </button>
             </div>
           </section>
-          {/* Expertise section */}
-          {/* <ExpertiseSection /> */}
+         
 
-          {/* Services viewport section */}
 
           {/* Simple pricing section */}
           <section className="w-full py-20 relative">
